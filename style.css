@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("sahara-desert.jpg");
+}
+
+
+.Container {
+    overflow-x: hidden;
+}
+
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+
+.Logo {
+    width: 50px;
+    height: 50px;
+}
+
+.Logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.sideNav {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+
+.NavList {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+
+}
+
+.NavList a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.Hammburger {
+    background-color: white;
+    opacity: 0.2;
+    padding: 5px;
+    border-radius: 50%;
+
+
+}
+
+.flexTitle {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.para {
+    color: white;
+    line-height: 30px;
+}
+
+.explore {
+    background-color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0px 50px;
+    gap: 50px;
+}
+
+
+
+.flex1 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.box {
+    /* width: 180px;*/
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-out;
+}
+
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.image1 {
+    background-image: url("pic-1.png");
+}
+
+.image2 {
+    background-image: url("pic-2.png");
+}
+
+.image3 {
+    background-image: url("pic-3.png");
+}
+
+.image4 {
+    background-image: url("pic-4.png");
+}
+
+
+.boxpara {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+
+.flex2title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 856px) {
+    .content {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .flex2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .box {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .NavList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Logo {
+        display: none;
+
+    }
+
+    .Header {
+        justify-content: center;
+    }
+}
